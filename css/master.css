@@ -100,7 +100,7 @@ h1{
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
   .labels {
     width: 100%;
     text-align: left;
