@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Survey Form</title>
+    <link rel="stylesheet" href="css\master.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+  </head>
+  <body>
+    <h1 id="title"><b>&lsquo;tech solutions&rsquo;</b> survey form</h1>
+<div id="form-outer">
+  <p id="description">
+    <b>Help us improve our web-services.</b>
+  </p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name"><b>Name: </b></label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email"><b>Email: </b></label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age"><B>Age: </b></label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+
+
+    <fieldset style="width: 57.5%; margin: auto;">
+ <legend><b>How likely is that you would recommend to use our services to a friend?</b></legend>
+ <input name="radio-buttons" value="1"  type="radio" id="userRatings">
+ <label for="userRatings">Definitely</label><br>
+<input name="radio-buttons" value="2"  type="radio" id="userRatings" >
+ <label for="userRatings">Maybe</label><br>
+<input name="radio-buttons" value="3"  type="radio" id="userRatings" >
+ <label for="userRatings">Not sure</label>
+</fieldset>
+
+
+    <div class="rowTab">
+      <div class="labels" style="width: 57.5%; margin: auto; text-align: center;">
+        <label for="most-like"><b>What do you like most about our services: </b></label>
+      </div>
+      <div class="rightTab" style="width: 57.5%; margin: auto; text-align: center;">
+        <textarea id="comments" class="input-field" style="height:100px;resize:vertical; width: 90%;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+
+    <div class="rowTab">
+<div class="labels" style="width: 57.5%; margin: auto; text-align: center;">
+<label for="most-like"><b>What do you like most about us: </b></label>
+</div>
+<div class="rightTab" style="width: 57.5%; margin: auto; text-align: center;">
+<select id="dropdown">
+<option disabled="" selected="" value="">Select an option</option>
+<option value="work">Work</option>
+<option value="Punctuality">Punctuality</option>
+<option value="Responsibility">Responsibility</option>
+<option value="Dedication">Dedication</option>
+</select>
+</div>
+</div>
+    <div class="rowTab">
+      <div class="labels" style="width: 57.5%; margin: auto; text-align: center;">
+        <label for="preferences"><b>Things we need to improve</b><br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab" style="width: 57.5%; text-align: center;">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end design</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end design</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">User Interface</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Accessibility</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Responsive design</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels" style="width: 57.5%; margin: auto; text-align: center;">
+        <label for="comments"><b>Any Comments or Suggestions?</b></label>
+      </div>
+      <div class="rightTab" style="width: 57.5%; margin: auto; text-align: center;">
+        <textarea id="comments" class="input-field" style="height:100px;resize:vertical; width: 90%;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  </body>
+</html>
