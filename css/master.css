@@ -1,0 +1,120 @@
+*{
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #a9d752;
+  text-align: center;
+  font-family: 'Alegreya Sans SC', Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+h1{
+  background-color: rgba(225, 239, 199, 1);
+  font-size: 40px;
+  margin-top: .5rem;
+}
+
+#description{
+  font-size: 20px;
+}
+
+#form-outer {
+  background-color: rgba(250, 250, 250, 0.7);
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 85%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 26%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 27px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 65%;
+  vertical-align: middle;
+}
+
+.input-field {
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 3px solid #a1b2c3;
+  border-radius: 2px;
+}
+
+#userAge {
+  width: 40px;
+}
+
+
+#submit {
+  background-color: lightcoral;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+    transition: 0.4s;
+}
+
+#submit:hover{
+  background-color: #a9d752;
+}
+
+#dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  .input-field {
+    width: 60%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
