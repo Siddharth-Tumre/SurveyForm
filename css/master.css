@@ -1,13 +1,13 @@
     html,
     body {
-      background-color: #a9d752;
+      background-color: cadetblue;
       text-align: center;
       font-family: 'Alegreya Sans SC', monospace, sans-serif;
       min-width: 320px;
     }
 
     h1{
-      background-color: rgba(225, 239, 199, 1);
+      background-color: rgba(250, 250, 250, 0.7);
       font-size: 40px;
       margin-top: .5rem;
     }
@@ -68,9 +68,6 @@
         transition: 0.4s;
     }
 
-    #submit:hover{
-      background-color: #a9d752;
-    }
 
     #dropdown {
       height: 35px;
